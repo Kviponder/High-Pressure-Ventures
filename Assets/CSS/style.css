@@ -1,0 +1,267 @@
+/* :root {
+  --blue: #2c2891;
+  --lightGreen: #39a388;
+  --green: #1c7947;
+  --yellow: #fffd95;
+}
+
+body {
+  background-color: white;
+  font-family: monospace, Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: var(--lightGreen);
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  justify-content: end;
+}
+main {
+  margin-top: 160px;
+  margin-left: 200px;
+  width: 85%
+}
+
+.search-container {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.search-form {
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--lightGreen);
+  color: var(--yellow);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.previous-searches {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.previous-searches li {
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.column {
+  display: inline-flex;
+  width: 15%;
+}
+
+#containerID {
+  margin: 0 3 0 0;
+  top: 50px;
+  width: 15%;
+  position: relative;
+}
+
+#searchBox {
+  width: 100%;
+  background-color: var(--blue);
+  border-bottom: 2px dashed var(--yellow);
+  
+}
+
+#results {
+  width: 100%;
+  background-color: var(--blue);
+  border-bottom: 2px dashed var(--yellow);
+}
+
+#cityBox {
+  top: 50px;
+  width: 200px;
+  background-color: var(--green);
+  margin: 20px;
+  margin-left: 15%;
+}
+
+#forecast {
+  background-color: var(--lightGreen);
+  border: 3px solid var(--blue);
+  margin: 20px;
+  position: relative;
+}
+
+#weatherCard {
+  background-color: var(--yellow);
+  padding: 5px;
+  margin: 10px;
+  flex: auto;
+} */
+
+
+
+:root {
+  --blue: #2c2891;
+  --lightGreen: #39a388;
+  --green: #1c7947;
+  --yellow: #fffd95;
+  --white: #ffffff;
+  --input-border: #ccc;
+  }
+  
+  body {
+  background-color: var(--white);
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  
+  header {
+  background-color: var(--lightGreen);
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  header h1 {
+  color: var(--white);
+  margin: 0;
+  }
+  
+  aside.search-container {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  
+  .search-form {
+  margin-bottom: 20px;
+  }
+  
+  .search-form input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  }
+  
+  .search-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--lightGreen);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  .previous-searches {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
+  
+  .previous-searches li {
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid var(--input-border);
+  }
+  
+  main {
+    margin-top: 60px;
+    margin-left: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.current-weather {
+    background-color: var(--green);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.current-weather h2,
+.current-weather ul {
+    margin: 0;
+    padding: 0;
+}
+
+.current-weather ul {
+    list-style: none;
+}
+
+.current-weather ul li {
+    margin-bottom: 10px;
+}
+
+.forecast {
+    background-color: var(--lightGreen);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.forecast h3 {
+    margin: 0 0 20px 0;
+}
+
+.forecast-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    background-color: var(--yellow);
+    padding: 10px;
+    width: calc(20% - 20px);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.forecast-card p {
+    margin: 0;
+}
+  
