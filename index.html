@@ -9,113 +9,103 @@
     <link rel="stylesheet" href="Assets/CSS/style.css">
 
 </head>
+
 <body>
     <header>
         <h1>High-Pressure Ventures Forecast</h1>
         <nav></nav>
     </header>
-    
-    <aside class="search-container">
+
+    <aside class="searchContainer">
         <form class="search-form">
             <input type="text" placeholder="Search...">
             <button type="submit">Search</button>
         </form>
-        <ul class="previous-searches">
-            <li>Previous search 1</li>
-            <li>Previous search 2</li>
-            <li>Previous search 3</li>
+        <div>
+        <h2 class="previousSearches"> Recent Searches: </h2>
+        <ul class="rsList">
+
         </ul>
+    </div>
     </aside>
-    
+
     <main>
         <section class="current-weather">
-            <h2>Search to see current weather</h2>
+            <h2 id="cwHead">Search to see current weather</h2>
             <ul>
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
         </section>
-    
+
         <section class="forecast">
             <h3>5 Day Forecast</h3>
-            <div class="forecast-cards">
-                <div class="forecast-card">
+            <div class="forecastCards">
+                <div class="forecastCard" id="forecastCard1">
                     <div>
-                    
-                        <p>Lorem ipsum dolor sit amet,
-                            <br>
-                            consectetur adipisicing elit.
-                            <br>
-                            amet nobis repellat nulla quam omnis.
-                            <br>
-                            neque. Deleniti eveniet necessitatibus.
-                        </p>
+                        <ul>
+                            <li id="date"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="forecast-card">
+                <div class="forecastCard" id="forecastCard2">
                     <div>
-                    
-                        <p>Lorem ipsum dolor sit amet,
-                            <br>
-                            consectetur adipisicing elit.
-                            <br>
-                            amet nobis repellat nulla quam omnis.
-                            <br>
-                            neque. Deleniti eveniet necessitatibus.
-                        </p>
+                        <ul>
+                            <li id="date"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="forecast-card">
+
+                <div class="forecastCard" id="forecastCard3">
                     <div>
-                    
-                        <p>Lorem ipsum dolor sit amet,
-                            <br>
-                            consectetur adipisicing elit.
-                            <br>
-                            amet nobis repellat nulla quam omnis.
-                            <br>
-                            neque. Deleniti eveniet necessitatibus.
-                        </p>
+                        <ul>
+                            <li id="date"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="forecast-card">
+
+                <div class="forecastCard" id="forecastCard4">
                     <div>
-                    
-                        <p>Lorem ipsum dolor sit amet,
-                            <br>
-                            consectetur adipisicing elit.
-                            <br>
-                            amet nobis repellat nulla quam omnis.
-                            <br>
-                            neque. Deleniti eveniet necessitatibus.
-                        </p>
+                        <ul>
+                            <li id="date"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-                
-                <div class="forecast-card">
+
+                <div class="forecastCard" id="forecastCard5">
                     <div>
-                    
-                        <p>Lorem ipsum dolor sit amet,
-                            <br>
-                            consectetur adipisicing elit.
-                            <br>
-                            amet nobis repellat nulla quam omnis.
-                            <br>
-                            neque. Deleniti eveniet necessitatibus.
-                        </p>
+                        <ul>
+                            <li id="date"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
-                
-                
             </div>
         </section>
     </main>
-    
+
     <script src="Assets/javaScript/script.js"></script>
-    
+
 </body>
 
 </html>
