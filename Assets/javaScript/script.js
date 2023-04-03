@@ -51,7 +51,8 @@ function updateFiveDayForecast(data) {
     document.querySelector("#forecastCard4"),
     document.querySelector("#forecastCard5"),
   ];
-
+  const showForecast = document.querySelectorAll(".forecast");
+  showForecast[0].classList.remove("showNone");
 
   //Adjust forecastCards to be called by jquery and call cards individually w/ ids
   for (let i = 0; i < cards.length; i++) {
@@ -79,5 +80,4 @@ function updateFiveDayForecast(data) {
   }
 }
 console.log(updateFiveDayForecast);
-
 

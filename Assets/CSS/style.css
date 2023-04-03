@@ -153,3 +153,7 @@
   text-decoration: underline;
   margin-bottom: 10px;
 }
+
+.showNone {
+  display: none;
+}
