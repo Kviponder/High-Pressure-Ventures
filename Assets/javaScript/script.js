@@ -1,6 +1,7 @@
 var APIKey = "e021bdc26c7a8da2768220633ec78553";
 const searchForm = document.querySelector('.search-form');
 const rsList = document.querySelector('.rsList');
+const clearBtn = document.querySelector(".clearBtn")
 
 document
   .querySelector(".search-form")
@@ -16,6 +17,7 @@ document
       })
       .then(function (data) {
         updateCurrentWeather(data);
+        addRecentSearch(city);
         //find 5-day endpoint
         fetch(
           `https://api.openweathermap.org/data/2.5/forecast?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=${APIKey}&units=imperial`
@@ -80,4 +82,19 @@ function updateFiveDayForecast(data) {
   }
 }
 console.log(updateFiveDayForecast);
+
+function addRecentSearch(city) {
+  const li = document.createElement('li');
+  li.textContent= city;
+  li.addEventListener('click', function() {
+    document.querySelector('.search-form input[type="text"]').value = city;
+    searchForm.dispatchEvent(new Event('submit'));
+  });
+  rsList.prepend(li);
+}
+clearBtn.addEventListener('click', function() {
+  while (rsList.firstChild) {
+rsList.removeChild(rsList.firstChild);
+  }
+});
 
